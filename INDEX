@@ -1,0 +1,3 @@
+multilm		Fit and Test Mutivariate Linear Models
+summary.multilm	Stabilized Multivariate Tests
+mpinv		Moore-Penrose-Inverse

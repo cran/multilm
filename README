@@ -1,0 +1,23 @@
+'multilm' is a R package for fitting and testing multivariate linear
+models and is Copyright (C) 1999 by Torsten Hothorn
+<hothorn@statistik.uni-dortmund.de>
+
+This is version 0.1 and contains only very basic methods. 
+
+`multilm' is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2, or (at your option) any later
+version.
+
+`multilm' is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+
+A copy of the GNU General Public License is available on the World Wide
+Web at http://www.gnu.org/copyleft/gpl.html.  You can also obtain it by
+writing to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge,
+MA 02139, USA.
+
+
+Please send comments, errors etc. to the author.
