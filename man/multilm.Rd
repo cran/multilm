@@ -14,7 +14,7 @@ called from}
 }
 \description{
  \code{multilm} fits a multivariate linear model und performs the Hotelling
-T^2 - Test for a given linear test problem. 
+\eqn{T^2} - Test for a given linear test problem. 
 }
 \details{
 A multivariate linear model is a model of the form \eqn{Y = X B + E}, where
@@ -22,18 +22,18 @@ A multivariate linear model is a model of the form \eqn{Y = X B + E}, where
 the matrix of responses, \eqn{X} is the design matrix, \eqn{B} is the matrix of
 coefficients and \eqn{E} a matrix of normally distributed errors. Parameter restrictions
 can be included by the \eqn{Z} matrix: \eqn{Z B = 0} (which has applications in
-MANOVA). \code{multilm} additionally calculates the Hotelling T^2-Test for
+MANOVA). \code{multilm} additionally calculates the Hotelling \eqn{T^2}-Test for
 the given test problem: \eqn{H0: K B = 0}. An approximation by Laeuter
-is used for the distribution of the T^2-statistic (and therefore 
-for the p-value). T^2 is not very useful when the number of observations is
+is used for the distribution of the \eqn{T^2}-statistic (and therefore 
+for the p-value). \eqn{T^2} is not very useful when the number of observations is
 limited but many variables are included in the model. This problem is solved
 by the stabilized multivariate test procedures by Laeuter et. al. , which are
 available in \code{summary.multilm}  
 }
 \value{
  A object of class \code{multilm} containing the following components:
-  \item{hotelstat}{the T^2 test statistic}
-  \item{hotelp}{the pvalue of the T^2-test}
+  \item{hotelstat}{the \eqn{T^2} test statistic}
+  \item{hotelp}{the pvalue of the \eqn{T^2}-test}
   \item{coefficients}{the matrix of estimated coefficients}
   \item{covar}{the estimation of the covariance matrix} 
 }

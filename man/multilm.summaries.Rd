@@ -10,24 +10,24 @@ summary.multilm(object, test="Hotelling")
 "CS");
 }
 \description{
- \code{summary.multilm} prints the results of Hotellings T^2 and implements the SS, PC-q, PC-1
+ \code{summary.multilm} prints the results of Hotellings \eqn{T^2{ and implements the SS, PC-q, PC-1
 and CS test according to Laeuter and Kropf.  
 }
 \details{
-The Hotelling T^2 test is not very useful when the number of observations is
+The Hotelling \eqn{T^2} test is not very useful when the number of observations is
 limited but many variables are included in the model. This problem is solved
 by the stabilized multivariate test procedures by Laeuter et.al., which are
 available in \code{summary.multilm}. All these test procedures follow the same
 principle: generate a vector \eqn{d} (or a matrix
 \eqn{D}) as a function of \eqn{W = (Y - \bar{Y})^{\top}(Y - \bar{Y}) },
 where \eqn{Y} is the matrix of responses. Then analyse the original test problem using
-the low dimensional, artificial "responses" \eqn{Yd} or \eqn{YD} by T^2.
+the low dimensional, artificial "responses" \eqn{Yd} or \eqn{YD} by \eqn{T^2}.
 The procedures SS, PC-q, PC-1 and CS differ in the way the vector \eqn{d}
 or the matrix \eqn{D} is defined. SS, CS and PC-1 test always reduce the
 original problem into a one dimensional problem. Naturally, one would use
-the univariate procedures instead of a univariate T^2 test. Because of the lack
-of a simple standard procedure for testing any linear hypothesis \eqn{H0: K beta =
-0}, we use T^2, which reduces to the F-test in the univariate case. 
+the univariate procedures instead of a univariate \eqn{T^2} test. Because of the lack
+of a simple standard procedure for testing any linear hypothesis \eqn{H0: K\beta =
+0}, we use \eqn{T^2}, which reduces to the F-test in the univariate case. 
 }
 \value{ 
  The test statistic, degrees of freedom and the p-value of the test. 
