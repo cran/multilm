@@ -42,7 +42,7 @@ data(iris)
 # one-classification MANOVA, Y response matrix, X designmatrix
 Y <- as.matrix(iris[,1:4]);
 x <- c(rep(1,50), rep(0,150), rep(1, 50), rep(0,150), rep(1,50))
-X <- cbind(1, matrix(c, ncol=3))
+X <- matrix(x, ncol=3)
 # restrictions: sum of effects equal zero
 Z <- c(0,1,1,1);
 # test for equal effects

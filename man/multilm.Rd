@@ -48,8 +48,8 @@ Berlin}
 data(iris)
 # one-classification MANOVA, Y response matrix, X design matrix
 Y <- as.matrix(iris[,1:4]);
-x <- c(rep(1,50), rep(0,150), rep(1, 50), rep(0, 150), rep(0,50))
-X <- cbind(1, matrix(x, ncol=3))
+x <- c(rep(1,50), rep(0,150), rep(1, 50), rep(0, 150), rep(1,50))
+X <- matrix(x, ncol=3)
 # restrictions: sum of effects equal zero
 Z <- c(0,1,1,1);
 # test for equal effects
